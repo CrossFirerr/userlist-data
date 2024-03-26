@@ -6,7 +6,7 @@ export const List = ({ userList = [] }) => {
     <div>
       <ul>
         {userList.map((name, i) => {
-          return <li>{name}</li>;
+          return <li key={i}>{name}</li>;
         })}
       </ul>
     </div>
